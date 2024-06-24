@@ -1,0 +1,241 @@
+.checklist-container {
+  position: relative;
+  width: 743px;
+  height: 91px;
+  background: #3579f5;
+  border-radius: 10px;
+}
+.btn-open-checklist {
+  position: absolute;
+  top: 26px;
+  left: 555px;
+  width: Fixed (170px) px;
+  height: Hug (40px) px;
+  padding: 10px 32px 10px 32px;
+  gap: 10px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
+  border-radius: 6px;
+  background: #f4f8ff;
+}
+
+.btn-open-checklist > .typography {
+  width: 120px;
+  height: 20px;
+  white-space: nowrap;
+  color: #4777ed;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.label-checklist {
+  position: absolute;
+  top: 12px;
+  left: 98px;
+  padding: 0px 10px 0px 10px;
+  gap: 10px;
+  opacity: 0px;
+  align-items: center;
+  border-radius: 40px;
+  width: Fixed (76px) px;
+  height: Hug (18px) px;
+  border-radius: 40px;
+  background: #2364db;
+}
+
+.label-checklist > .typography {
+  position: static;
+  width: 50px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.typography-complite {
+  position: absolute;
+  left: 98px;
+  top: 34px;
+  color: rgb(255, 255, 255);
+  width: 211px;
+  height: 20px;
+  top: 34px;
+  left: 98px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.typography-next-task {
+  position: absolute;
+  width: 389px;
+  height: 18px;
+  left: 98px;
+  right: 256px;
+  top: 58px;
+  bottom: 15px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  width: 60px;
+  height: 60px;
+  top: 16px;
+  left: 22px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle > span {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.outer {
+  background-color: #ffffff;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 0,
+    100% 0,
+    100% 0,
+    100% 0,
+    100% 0,
+    50% 50%,
+    50% 50%
+  );
+  border: 2px solid #ffffff80;
+}
+
+.inner {
+  transform: scale(0.95);
+  background-color: #3579f5;
+  border: 1px solid #ffffff80;
+}
+
+/* .diagram {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #990;
+  position: relative;
+  overflow: hidden;
+}
+.diagram::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  background: #3579f5;
+  z-index: 3;
+  opacity: 1;
+}
+.diagram .piece {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.diagram .piece::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.diagram .piece.left {
+  transform: rotate(0deg);
+  z-index: 2;
+  border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+/*}
+.diagram.over_50 .piece.left {
+  transform: rotate(180deg);
+}
+.diagram .piece.right {
+  transform: rotate(200deg);
+  z-index: 1;
+  border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+/*}
+.diagram.over_50 .piece.right {
+  transform: rotate(360deg);
+}
+.diagram .left::before {
+  background: #ffffff;
+}
+.diagram.over_50 .left::before {
+  background: #990;
+}
+.diagram .right::before {
+  background: #ffffff;
+}
+.diagram .text {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diagram .text b {
+  font-size: 20px;
+} */
